@@ -14,7 +14,7 @@ for k in range(200): # 201 epochs or 1608 hours = 66 days or 2 months, you can c
         n = n + (n * .03) # For the first 60 epochs with 3% expansion in boardroom you can change this with your expects
         total = total+n
 
-print("Total BTD by day "+ n) # Total btd by day
-print("Total amount of money "+ total) # Total amount of money from today to the number you put in range
+print("Total BTD by day ", n) # Total btd by day
+print("Total amount of money ", total) # Total amount of money from today to the number you put in range
 
 
