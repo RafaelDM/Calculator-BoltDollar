@@ -4,11 +4,11 @@
 n = 3 # How much btd are you winning right now
 total = 0 # Initialize the variable of the total amount you will have if you don't unstake in btd
 for k in range(200): # 201 epochs or 1608 hours = 66 days or 2 months, you can change this to your expectations
-    if(k >= 60): 
+    if(k >= 120):
+            n= n + (n * .01) # for 120 to 200 epochs 1% you can change this with your expects
+            total = total+n   
+    elif(k >= 60): 
         n= n + (n * .015) # for 60 to 120 epochs 1.5% you can change this with your expects
-        total = total+n
-    elif(k >= 120):
-        n= n + (n * .01) # for 120 to 200 epochs 1% you can change this with your expects
         total = total+n
     else:
         n = n + (n * .03) # For the first 60 epochs with 3% expansion in boardroom you can change this with your expects
